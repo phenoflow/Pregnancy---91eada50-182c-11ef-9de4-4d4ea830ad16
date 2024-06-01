@@ -2,7 +2,7 @@
 
 import sys, csv, re
 
-codes = [{"code":"Z22A211","system":"readv2"},{"code":"Z234400","system":"readv2"},{"code":"626..00","system":"readv2"},{"code":"627..00","system":"readv2"},{"code":"Z22A100","system":"readv2"},{"code":"Z22A200","system":"readv2"},{"code":"L2z..00","system":"readv2"},{"code":"628..00","system":"readv2"},{"code":"628Z.00","system":"readv2"},{"code":"ZV23.00","system":"readv2"},{"code":"623..00","system":"readv2"},{"code":"L2...00","system":"readv2"},{"code":"L227.00","system":"readv2"},{"code":"ZV23y00","system":"readv2"},{"code":"623Z.00","system":"readv2"},{"code":"ZV23z00","system":"readv2"},{"code":"L2y..00","system":"readv2"}];
+codes = [{"code":"Z22A211","system":"readv2"},{"code":"626..00","system":"readv2"},{"code":"627..00","system":"readv2"},{"code":"Z22A100","system":"readv2"},{"code":"Z22A200","system":"readv2"},{"code":"ZV23.00","system":"readv2"},{"code":"623..00","system":"readv2"},{"code":"ZV23y00","system":"readv2"},{"code":"ZV23z00","system":"readv2"}];
 REQUIRED_CODES = 1;
 with open(sys.argv[1], 'r') as file_in, open('pregnancy-potential-cases.csv', 'w', newline='') as file_out:
     csv_reader = csv.DictReader(file_in)
