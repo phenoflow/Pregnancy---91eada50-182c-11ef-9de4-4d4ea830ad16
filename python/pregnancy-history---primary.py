@@ -2,7 +2,7 @@
 
 import sys, csv, re
 
-codes = [{"code":"6236","system":"readv2"},{"code":"ZV23200","system":"readv2"},{"code":"6214","system":"readv2"}];
+codes = [{"code":"ZV23400","system":"readv2"},{"code":"6236","system":"readv2"},{"code":"ZV23200","system":"readv2"},{"code":"6214","system":"readv2"}];
 REQUIRED_CODES = 1;
 with open(sys.argv[1], 'r') as file_in, open('pregnancy-potential-cases.csv', 'w', newline='') as file_out:
     csv_reader = csv.DictReader(file_in)
